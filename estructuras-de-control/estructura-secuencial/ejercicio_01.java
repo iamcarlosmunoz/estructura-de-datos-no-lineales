@@ -9,29 +9,29 @@ import java.util.Scanner;
 
 public class ejercicio_01 {
 
-	public static void main(String[] args) {
+  public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
-		float base = 0.0f;
-		float altura = 0.0f;
-		float area = 0.0f;
-		float perimetro = 0.0f;
+    float base = 0.0f;
+    float altura = 0.0f;
+    float area = 0.0f;
+    float perimetro = 0.0f;
 
-		System.out.print("Ingrese área: ");
-		base = sc.nextFloat();
+    System.out.print("Ingrese área: ");
+    base = sc.nextFloat();
 
-		System.out.print("Ingrese altura: ");
-		altura = sc.nextFloat();
+    System.out.print("Ingrese altura: ");
+    altura = sc.nextFloat();
 
-		area = base * altura;
-		perimetro = 2 * (base + altura);
+    area = base * altura;
+    perimetro = 2 * (base + altura);
 
-		System.out.println("\nRESULTADOS");
-		System.out.println("1. Área = " + area);
-		System.out.println("2. Perímetro = " + perimetro);
+    System.out.println("\nRESULTADOS");
+    System.out.println("1. Área = " + area);
+    System.out.println("2. Perímetro = " + perimetro);
 
-		sc.close();
-	}
+    sc.close();
+  }
 
 }
