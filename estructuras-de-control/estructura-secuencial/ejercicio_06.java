@@ -1,3 +1,10 @@
+
+/**
+ * Realizar un algoritmo que permita leer una cantidad que representa grados Fahrenheit
+ * y los convierta a grados centígrados y viceversa.
+ * C = 9/5(F – 32) F = 9/5C + 32
+ */
+
 import java.util.Scanner;
 
 public class ejercicio_06 {
