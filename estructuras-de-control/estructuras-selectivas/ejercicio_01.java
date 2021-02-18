@@ -1,8 +1,8 @@
 
 /**
- * LEER EL NOMBRE, LA EDAD Y EL ESTADO CIVIL (0=SOLTERO; 1=CASADO) DE UNA
- * PERSONA. IMPRIMA EL NOMBRE DE LA PERSONA SEGUIDO DEL TEXTO SOLTERO Y MAYOR DE
- * EDAD SOLO SI CUMPLE CON LAS CONDICIONES CORRESPONDIENTES.
+ * Leer el nombre, la edad, y el estado civil (0 = SOLTERO / 1 = CASADO) de una persona.
+ * Imprima el nombre de la persona seguido del texto soltero y mayor de edad
+ * solo si cumple com las condiciones correspondientes.
  */
 
 import java.util.Scanner;
