@@ -4,6 +4,6 @@ Profundizar el estudio de Estructuras de Datos Lineales, dando énfasis en esta 
 
 ## Contenido
 
-- **Estructura De Control**
+- **Estructuras De Control**
   1. [Estructuras Secuenciales](https://github.com/iamcarlosmunoz/estructura-de-datos-no-lineales/tree/main/estructuras-de-control/estructuras-secuenciales)
   2. [Estructuras Selectivas](https://github.com/iamcarlosmunoz/estructura-de-datos-no-lineales/tree/main/estructuras-de-control/estructuras-selectivas)
