@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Calcular el salario neto de un trabajador, su salario basico se calcula con
  * base en el número de horas trabajadas, el precio por hora y las horas extra
@@ -7,4 +9,9 @@
  */
 public class ejercicio_04 {
 
+  public static void main(String[] args) {
+
+    Scanner sc = new Scanner(System.in);
+
+  }
 }
