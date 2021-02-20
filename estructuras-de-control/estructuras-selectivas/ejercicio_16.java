@@ -22,17 +22,17 @@ public class ejercicio_16 {
     numberThree = sc.nextInt();
 
     if (numberOne > numberTwo && numberOne > numberThree && numberTwo > numberThree) {
-      System.out.println("\n " + numberOne + ", " + numberTwo + ", " + numberThree);
+      System.out.println("\n" + numberOne + ", " + numberTwo + ", " + numberThree);
     } else if (numberOne > numberTwo && numberOne > numberThree && numberTwo < numberThree) { // Variante
-      System.out.println("\n " + numberOne + ", " + numberTwo + ", " + numberThree);
+      System.out.println("\n" + numberOne + ", " + numberThree + ", " + numberTwo);
     } else if (numberTwo > numberOne && numberTwo > numberThree && numberOne > numberThree) {
-      System.out.println("\n " + numberTwo + ", " + numberOne + ", " + numberThree);
+      System.out.println("\n" + numberTwo + ", " + numberOne + ", " + numberThree);
     } else if (numberTwo > numberOne && numberTwo > numberThree && numberOne < numberThree) { // Variante
-      System.out.println("\n " + numberTwo + ", " + numberThree + ", " + numberOne);
+      System.out.println("\n" + numberTwo + ", " + numberThree + ", " + numberOne);
     } else if (numberThree > numberOne && numberThree > numberTwo && numberOne > numberTwo) {
-      System.out.println("\n " + numberThree + ", " + numberOne + ", " + numberTwo);
-    } else if (numberThree > numberOne && numberThree > numberTwo && numberOne < numberTwo) { // Variante
-      System.out.println("\n " + numberThree + ", " + numberOne + ", " + numberTwo);
+      System.out.println("\n" + numberThree + ", " + numberOne + ", " + numberTwo);
+    } else { // Variante
+      System.out.println("\n" + numberThree + ", " + numberTwo + ", " + numberOne);
     }
 
     sc.close();
