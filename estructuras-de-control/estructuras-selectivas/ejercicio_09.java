@@ -13,7 +13,7 @@ public class ejercicio_09 {
 
     int nota = 0;
 
-    System.out.println("\nIngrese la nota final = ");
+    System.out.print("\nIngrese la nota final = ");
     nota = sc.nextInt();
 
     if (nota < 3 && nota >= 0) {
