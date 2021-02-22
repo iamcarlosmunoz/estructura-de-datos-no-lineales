@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Un vendedor desea conocer su comision total al final del día. Suponga que en
  * el almacen solo hay articulos de tres precios con la siguiente comision:
@@ -6,4 +8,9 @@
 
 public class ejercicio_12 {
 
+  public static void main(String[] args) {
+
+    Scanner sc = new Scanner(System.in);
+
+  }
 }
