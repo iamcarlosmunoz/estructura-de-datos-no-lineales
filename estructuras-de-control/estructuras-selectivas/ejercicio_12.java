@@ -29,12 +29,14 @@ public class ejercicio_12 {
     System.out.print("Ingrese articulos vendidos con valor ($500.000): ");
     articuloTipo3 = sc.nextInt();
 
-    if (articuloTipo1 != 0 && articuloTipo2 != 0 && articuloTipo3 != 0) {
-      comision = ((articuloTipo1 * 100000) * 3 / 100) + ((articuloTipo2 * 100000) * 3 / 100)
-          + ((articuloTipo3 * 100000) * 3 / 100);
+    if (articuloTipo1 > 0 && articuloTipo2 > 0 && articuloTipo3 > 0) {
+      comision = ((articuloTipo1 * 100000) * 3 / 100) + ((articuloTipo2 * 300000) * 5 / 100)
+          + ((articuloTipo3 * 500000) * 8 / 100);
       System.out.println("\nComision: " + comision);
     } else {
       System.out.println("\nSin comisiones");
     }
+
+    sc.close();
   }
 }
