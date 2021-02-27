@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Leer un número entero y calcular el número invertido. Ej1. Si n= 614275, el
- * invertido es 572416. Ej2. Si n = 9518 el invertido es: 8159
+ * Leer un número entero y calcular si es primo o no.
  */
 
 public class ejercicio_04 {
