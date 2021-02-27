@@ -11,6 +11,21 @@ public class ejercicio_02 {
 
     Scanner sc = new Scanner(System.in);
 
+    // Entrada
+    int number = 0;
+
+    // Salida
+    int summation = 0;
+
+    System.out.print("\nIngrese número entero: ");
+    number = sc.nextInt();
+
+    for (int i = 0; i <= number; i++) {
+      summation += i;
+    }
+
+    System.out.println("\nSumatoria = " + summation);
+
     sc.close();
 
   }
