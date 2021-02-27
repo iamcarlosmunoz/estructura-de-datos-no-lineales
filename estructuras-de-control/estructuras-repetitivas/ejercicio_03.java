@@ -22,11 +22,11 @@ public class ejercicio_03 {
     number = sc.nextInt();
 
     for (int i = 1; i <= number; i++) {
-      if (sign) {
+      if (sign)
         summation += 1f / i;
-      } else {
+      else
         summation -= 1f / i;
-      }
+
       sign = !sign;
     }
 
