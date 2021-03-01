@@ -27,7 +27,7 @@ public class ejercicio_14 {
       number /= 10;
     }
 
-    System.out.println("\nResulta = " + sum);
+    System.out.println("\nResultado = " + sum);
 
     sc.close();
 
