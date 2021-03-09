@@ -1,5 +1,9 @@
 package recursividad;
 
+/**
+ * Cree una matriz de tamaño mXn y sume los elementos de la matriz
+ */
+
 public class ejercicio_12 {
 
   public static void main(String[] args) {
