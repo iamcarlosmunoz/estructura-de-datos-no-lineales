@@ -11,15 +11,15 @@ public class ejercicio_04 {
   public static void main(String[] args) {
 
     Scanner sc = new Scanner(System.in);
-    int numero;
+    int number;
 
     System.out.print("\nIngrese el valor: ");
-    numero = sc.nextInt();
+    number = sc.nextInt();
 
     sc.close();
 
     System.out.print("\nResultado = ");
-    reverseNumber(numero);
+    reverseNumber(number);
     System.out.println("\n");
 
   }
