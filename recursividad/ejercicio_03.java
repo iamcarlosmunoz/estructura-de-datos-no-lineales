@@ -24,12 +24,12 @@ public class ejercicio_03 {
 
   }
 
-  public static int summation(int number) {
+  public static float summation(int number) {
 
     if (number == 0)
       return 0;
     else
-      return summation(number - 1) + (1 / number);
+      return summation(number - 1) + (1f / number);
 
   }
 }
