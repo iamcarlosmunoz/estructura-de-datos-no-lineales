@@ -6,6 +6,7 @@ import java.util.Scanner;
  * Lea un valor y realice la sumatoria par e impar SIMULTANEAMENTE hasta el
  * número leído. Inicie por fuera del ciclo for la suma par y la suma impar
  */
+ 
 public class E06 {
 
   public static void main(String[] args) {

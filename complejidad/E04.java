@@ -7,6 +7,7 @@ import java.util.Scanner;
  * Imprima dentro del ciclo el valor que tiene la suma en cada iteración.
  * (Inicie la suma en 1, por fuera del ciclo).
  */
+ 
 public class E04 {
 
   public static void main(String[] args) {

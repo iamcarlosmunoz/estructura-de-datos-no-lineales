@@ -6,6 +6,7 @@ import java.util.Scanner;
  * Realice un programa que adivine un número un número entre 1 y 100. (Use
  * búsqueda binaria)
  */
+ 
 public class E01 {
 
   public static void main(String[] args) {

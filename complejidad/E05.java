@@ -6,6 +6,7 @@ import java.util.Scanner;
  * Leer un número y calcular la sumatoria de números pares hasta el número
  * leído. (Inicie la suma en 0, por fuera del ciclo).
  */
+ 
 public class E05 {
 
   public static void main(String[] args) {

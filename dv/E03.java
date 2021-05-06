@@ -9,6 +9,7 @@ import java.util.Scanner;
  * buscarlo en el vector. Determine si el número se encuentra o no en el vector.
  * Si se encuentra imprima la posición (Use búsqueda binaria).
  */
+ 
 public class E03 {
 
   public static void main(String[] args) {

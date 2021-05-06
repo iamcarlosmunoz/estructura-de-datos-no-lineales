@@ -7,6 +7,7 @@ import java.util.Scanner;
  * iteración, como única instrucción dentro del ciclo. .(for básico con una
  * única sentencia dentro del ciclo)
  */
+ 
 public class E02 {
 
   public static void main(String[] args) {

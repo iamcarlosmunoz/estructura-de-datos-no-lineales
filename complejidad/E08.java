@@ -5,6 +5,7 @@ import java.util.Scanner;
 /**
  * Leer un número y determinar si es primo.
  */
+ 
 public class E08 {
 
   public static void main(String[] args) {
