@@ -6,7 +6,6 @@ import java.util.Scanner;
  * Realice un programa que adivine un número un número entre 1 y un límite que
  * debe ser ingresado por el usuario. (Use búsqueda binaria)
  */
- 
 public class E02 {
 
   public static void main(String[] args) {
@@ -64,6 +63,8 @@ public class E02 {
     System.out.println("\nEl número encontrado es " + listaNumeros[mitad]);
     System.out.println("Numero de intentos restantes: " + numeroIntentos + " de " + (int) Math.round(Math.log10(numeroMax) / Math.log10(2)));
     System.out.println("Fin del juego");
+
+    sc.close();
   }
 
   private static int[] generarVector(int numeroMax) {

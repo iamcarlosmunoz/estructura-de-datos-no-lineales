@@ -6,7 +6,6 @@ import java.util.Scanner;
  * Realice un programa que inicialice y ordene un vector de tamaño n, mediante
  * el método Quicksort.
  */
- 
 public class E04 {
 
   public static void main(String[] args) {
@@ -32,6 +31,8 @@ public class E04 {
       System.out.print(numero + " ");
     }
     System.out.println();
+
+    sc.close();
   }
 
   private static void quickSort(int vector[], int izquierda, int derecha) {

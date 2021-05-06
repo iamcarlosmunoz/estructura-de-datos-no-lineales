@@ -8,7 +8,6 @@ import java.util.Scanner;
  * instrucciones que se van ejecutando, como la única sentencia dentro del ciclo
  * for mas interno.
  */
- 
 public class E03 {
 
   public static void main(String[] args) {
@@ -16,20 +15,22 @@ public class E03 {
     Scanner sc = new Scanner(System.in);
 
     int contador; // Contador de instrucciones
-    int indexE; // Indice Externo
-    int indexI; // Indice Interior
+    int i; // Indice Externo
+    int j; // Indice Interior
 
     System.out.print("\nIngrese valor de n: ");
     int n = sc.nextInt();
 
-    for (indexE = 0, contador = 1; (contador++ != 0 && indexE < n); contador++, indexE++) {
-      for (indexI = 0, contador++; (contador++ != 0 && indexI < n); contador++, indexI++) {
+    for (i = 0, contador = 1; (contador++ != 0 && i < n); contador++, i++) {
+      for (j = 0, contador++; (contador++ != 0 && j < n); contador++, j++) {
         contador++;
         System.out.println("contador = " + contador);
       }
     }
 
     System.out.println("\nNúmero total de instruciones = " + contador);
+
+    sc.close();
 
     // Complejidad Algoritmica
     // >>> For interno

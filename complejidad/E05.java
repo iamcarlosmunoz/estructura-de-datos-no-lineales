@@ -6,7 +6,6 @@ import java.util.Scanner;
  * Leer un número y calcular la sumatoria de números pares hasta el número
  * leído. (Inicie la suma en 0, por fuera del ciclo).
  */
- 
 public class E05 {
 
   public static void main(String[] args) {
@@ -30,8 +29,11 @@ public class E05 {
     System.out.println("\nSumatoria Total: " + sumatoria);
     System.out.println("Contador Intrucciones: " + contador);
 
+    sc.close();
+
     // Complejidad Algoritmica
-    // 1 + n + 1 + n(2) + n = 2 + 4n
+    // 1 + n + 1 + n(1 + 2) + n
+    // = 2 + 4n
   }
 
 }

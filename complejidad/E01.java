@@ -7,7 +7,6 @@ import java.util.Scanner;
  * instrucciones que se deben realizar. Suponga que no hay ninguna instrucción
  * que se ejecute dentro del ciclo. (for básico con sentencia vacía!)
  */
- 
 public class E01 {
 
   @SuppressWarnings("empty-statement")

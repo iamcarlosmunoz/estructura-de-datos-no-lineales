@@ -7,7 +7,6 @@ import java.util.Scanner;
  * iteración, como única instrucción dentro del ciclo. .(for básico con una
  * única sentencia dentro del ciclo)
  */
- 
 public class E02 {
 
   public static void main(String[] args) {
@@ -26,6 +25,8 @@ public class E02 {
     }
 
     System.out.println("\nNúmero total de instruciones = " + contador);
+
+    sc.close();
 
     // Complejidad Algoritmica
     // 1 + n + 1 + n(1) + n = 2 + 3n
