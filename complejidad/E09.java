@@ -27,7 +27,7 @@ public class E09 {
 
     // Complejidad Algoritmica
     // >>> For interno
-    // 1 + m + 1 + m(1) + n = 2 + 3m
+    // 1 + m + 1 + m(1) + m = 2 + 3m
     // >>> For externo (Total)
     // 1 + n + 1 + n( 2 + 3m ) + n
     // 2 + 2n + 2n + 3(n)(m)

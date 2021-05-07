@@ -26,6 +26,7 @@ public class E01 {
     System.out.println("\nNúmero total de instruciones = " + contador);
 
     // Complejidad Algoritmica
-    // 1 + n + 1 + n = 2 + 2n
+    // 1 + n + 1 + n
+    // = 2 + 2n
   }
 }

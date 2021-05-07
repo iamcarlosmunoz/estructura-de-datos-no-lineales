@@ -30,6 +30,7 @@ public class E02 {
     sc.close();
 
     // Complejidad Algoritmica
-    // 1 + n + 1 + n(1) + n = 2 + 3n
+    // 1 + n + 1 + n(1) + n
+    // = 2 + 3n
   }
 }
