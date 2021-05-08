@@ -17,8 +17,9 @@ public class E02 {
     int posInicial;
     int posFinal;
     int mitad;
+    int intentos = 0; // contador
     int numeroMax;
-    int numeroIntentos;
+    int intentosMax;
     int listaNumeros[];
 
     // Ingresar limite
@@ -26,22 +27,24 @@ public class E02 {
     numeroMax = sc.nextInt();
 
     // Valores iniciales
-    numeroIntentos = (int) Math.round(Math.log10(numeroMax) / Math.log10(2));
+    intentosMax = (int) Math.round(Math.log10(numeroMax) / Math.log10(2));
     listaNumeros = generarVector(numeroMax);
     posInicial = 0;
     posFinal = listaNumeros.length - 1;
 
     // Imprimir limite establecido
     System.out.println("1 al " + listaNumeros.length);
-    System.out.println("Maximo número de intentos: " + numeroIntentos);
+    System.out.println("Maximo número de intentos: " + intentosMax);
 
     // ciclo principal
     do {
-      // Calcular mitad
-      mitad = posInicial + posFinal / 2;
+      // Calcular mitad y aumentar contador de intentos
+      mitad = (posInicial + posFinal) / 2;
+      intentos++;
 
       // Imprimir menu
-      System.out.println("\nEl número que usted penso es " + listaNumeros[mitad] + "?");
+      System.out.println("\nIntento N°" + intentos);
+      System.out.println("El número que usted penso es " + listaNumeros[mitad] + "?");
       System.out.println(">>>  Si es BAJO ingrese [1].");
       System.out.println(">>>  Si es ALTO ingrese [2].");
       System.out.println(">>>  Si " + listaNumeros[mitad] + " es el número CORRECTO ingrese [0].");
@@ -49,20 +52,25 @@ public class E02 {
       int opcion = sc.nextInt();
 
       // validar opción ingresada
-      if (opcion == 1) {
-        posInicial = mitad - 1;
-        numeroIntentos--;
-      } else if (opcion == 2) {
-        posFinal = mitad + 1;
-        numeroIntentos--;
-      } else if (opcion == 0) {
-        bandera = true;
+      switch (opcion) {
+        case 1:
+          posInicial = mitad + 1;
+          break;
+        case 2:
+          posFinal = mitad - 1;
+          break;
+        case 0:
+          bandera = true;
+          break;
+        default:
+          intentos--;
+          System.out.println("\nOpción NO Valida vuelve a intentar: (No se contara el intento)");
       }
 
-    } while (numeroIntentos > 0 && !bandera);
+    } while (intentos < intentosMax && !bandera);
 
     System.out.println("\nEl número encontrado es " + listaNumeros[mitad]);
-    System.out.println("Numero de intentos restantes: " + numeroIntentos + " de " + (int) Math.round(Math.log10(numeroMax) / Math.log10(2)));
+    System.out.println("Numero de intentos restantes: " + (intentos-intentosMax) + " de " + intentosMax);
     System.out.println("Fin del juego");
 
     sc.close();
