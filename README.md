@@ -16,3 +16,4 @@ Profundizar el estudio de Estructuras de Datos Lineales, dando énfasis en esta 
 ## Examenes
 
 - **1. Temas:** (Estructuras de Control - Recurisividad) [➡ ir al codigo](https://github.com/iamcarlosmunoz/estructura-de-datos-no-lineales/tree/main/examenes/primero)
+- **2. Temas:** (Complejidad Algoritmica - Tecnicas de diseño) [➡ ir al codigo](https://github.com/iamcarlosmunoz/estructura-de-datos-no-lineales/tree/main/examenes/segundo)
