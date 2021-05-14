@@ -6,19 +6,18 @@ import java.util.Scanner;
  * Realice un programa que adivine un número un número entre 1 y 100. (Use
  * búsqueda binaria)
  */
- 
 public class E01 {
 
   public static void main(String[] args) {
 
     Scanner sc = new Scanner(System.in);
 
-    boolean bandera = false;
     int posInicial;
     int posFinal;
     int mitad;
     int intentos = 0; // contador
     int listaNumeros[] = generarVector(100);
+    int opcion;
 
     // Valores iniciales
     posInicial = 0;
@@ -37,28 +36,19 @@ public class E01 {
       System.out.println(">>>  Si es ALTO ingrese [2].");
       System.out.println(">>>  Si " + listaNumeros[mitad] + " es el número CORRECTO ingrese [0].");
       System.out.print("Ingrese opción: ");
-      int opcion = sc.nextInt();
+      opcion = sc.nextInt();
 
       // validar opción ingresada
-      switch (opcion) {
-        case 1:
-          posInicial = mitad + 1;
-          break;
-        case 2:
-          posFinal = mitad - 1;
-          break;
-        case 0:
-          bandera = true;
-          break;
-        default:
-          intentos--;
-          System.out.println("\nOpción NO Valida vuelve a intentar: (No se contara el intento)");
+      if (opcion == 1) {
+        posInicial = mitad + 1;
+      } else if (opcion == 2) {
+        posFinal = mitad - 1;
       }
 
-    } while (intentos < 7 && !bandera);
+    } while (intentos < 7 && opcion != 0);
 
     System.out.println("\nEl número encontrado es " + listaNumeros[mitad]);
-    System.out.println("Numero de intentos restantes: " + (intentos - 7) + " de 7 ");
+    System.out.println("Numero de intentos: " + intentos + " de 7 ");
     System.out.println("Fin del juego");
 
     sc.close();

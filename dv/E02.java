@@ -6,14 +6,13 @@ import java.util.Scanner;
  * Realice un programa que adivine un número un número entre 1 y un límite que
  * debe ser ingresado por el usuario. (Use búsqueda binaria)
  */
- 
 public class E02 {
 
   public static void main(String[] args) {
 
     Scanner sc = new Scanner(System.in);
 
-    boolean bandera = false;
+    int opcion;
     int posInicial;
     int posFinal;
     int mitad;
@@ -49,28 +48,19 @@ public class E02 {
       System.out.println(">>>  Si es ALTO ingrese [2].");
       System.out.println(">>>  Si " + listaNumeros[mitad] + " es el número CORRECTO ingrese [0].");
       System.out.print("Ingrese opción: ");
-      int opcion = sc.nextInt();
+      opcion = sc.nextInt();
 
       // validar opción ingresada
-      switch (opcion) {
-        case 1:
-          posInicial = mitad + 1;
-          break;
-        case 2:
-          posFinal = mitad - 1;
-          break;
-        case 0:
-          bandera = true;
-          break;
-        default:
-          intentos--;
-          System.out.println("\nOpción NO Valida vuelve a intentar: (No se contara el intento)");
+      if (opcion == 1) {
+        posInicial = mitad + 1;
+      } else if (opcion == 2) {
+        posFinal = mitad - 1;
       }
 
-    } while (intentos < intentosMax && !bandera);
+    } while (intentos < intentosMax && opcion != 0);
 
     System.out.println("\nEl número encontrado es " + listaNumeros[mitad]);
-    System.out.println("Numero de intentos restantes: " + (intentos-intentosMax) + " de " + intentosMax);
+    System.out.println("Numero de intentos: " + intentos + " de " + intentosMax);
     System.out.println("Fin del juego");
 
     sc.close();

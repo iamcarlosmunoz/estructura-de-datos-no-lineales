@@ -7,7 +7,6 @@ import java.util.Scanner;
  * instrucciones que se deben realizar. Suponga que no hay ninguna instrucción
  * que se ejecute dentro del ciclo. (for básico con sentencia vacía!)
  */
- 
 public class E01 {
 
   @SuppressWarnings("empty-statement")
@@ -26,7 +25,6 @@ public class E01 {
     System.out.println("\nNúmero total de instruciones = " + contador);
 
     // Complejidad Algoritmica
-    // 1 + n + 1 + n
-    // = 2 + 2n
+    // 1 + n + 1 + n = 2 + 2n
   }
 }

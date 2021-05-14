@@ -8,7 +8,6 @@ import java.util.Scanner;
  * instrucciones que se van ejecutando, como la única sentencia dentro del ciclo
  * for mas interno.
  */
- 
 public class E03 {
 
   public static void main(String[] args) {
@@ -35,10 +34,8 @@ public class E03 {
 
     // Complejidad Algoritmica
     // >>> For interno
-    // 1 + n + 1 + n(1) + n
-    // = 2 + 3n
+    // 1 + n + 1 + n(1) + n = 2 + 3n
     // >>> For externo (Total)
-    // 1 + n + 1 + n( 2 + 3n ) + n
-    // = 3n² + 4n + 2
+    // 1 + n + 1 + n( 2 + 3n ) + n = 3n² + 4n + 2
   }
 }

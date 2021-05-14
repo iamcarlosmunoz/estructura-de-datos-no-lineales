@@ -6,7 +6,6 @@ import java.util.Scanner;
  * Realice un programa que inicialice y ordene un vector de tamaño n, mediante
  * el método Quicksort.
  */
- 
 public class E04 {
 
   public static void main(String[] args) {
